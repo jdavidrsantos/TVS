@@ -1,58 +1,42 @@
-.subtitle {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 17px;
-}
-.subtitle_2 {
-  font-size: 1 rem;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
-.imgtittle {
-  width: 5%;
-  height: auto;
-}
-.size {
-  width: auto;
-  height: 50%;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  color: green;
-  font-size: 2rem;
-  background-color: black;
+.price {
+  font-size: 1.5rem;
+  /* color: rgb(47, 47, 85); */
 }
 
-.cuadrado {
-  width: 9%;
+.dimentions img {
+  width: 90%;
   height: auto;
 }
 
-.triangulo {
-  width: 16%;
-  height: auto;
+.dimentions {
+  /* background-color: aqua; */
 }
 
-.cuadrado1 {
-  margin-left: 3rem;
-  background-color: rgb(255, 255, 255);
-  padding-left: 30px;
-  padding-bottom: 30px;
-  padding-right: 30px;
-  border-radius: 0.625rem;
-  border: none;
-  box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%),
-    0 0.9375rem 1.40625rem rgb(90 97 105 / 10%),
-    0 0.25rem 0.53125rem rgb(90 97 105 / 12%),
-    0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+.table {
+  width: 20rem;
 }
-.tittlesfigures {
-  font-weight: bold;
+.dimentions2 {
+  /* background-color: beige; */
 }
-.mybutton {
-  width: 100%;
+.dimentions3 {
+  /* background-color: blueviolet; */
+}
+.header {
+  background-color: rgb(53, 156, 163);
+  padding-top: 1rem;
+  font-size: 4rem;
+  color: white;
 }
 
-.form-control {
-  padding: 1%;
+.quantityProducts {
+  font-size: 1.5rem;
+  color: rgb(43, 38, 38);
+  padding-bottom: 1rem;
+}
+
+/* .colormirar {
+  background-color: antiquewhite;
+} */
+.hola {
+  margin-bottom: -0.5rem;
 }
