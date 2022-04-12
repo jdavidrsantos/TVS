@@ -1,12 +1,12 @@
 // const precioOriginal = 120;
 // const descuento = 18;
 
-function calcularPrecioConDescuento (precio, descuento){
+// function calcularPrecioConDescuento (precio, descuento){
 
-    const porcentajePrecioConDescuento = 100-descuento;
-    const precioConDescuento = (precio*porcentajePrecioConDescuento)/100;
-    return precioConDescuento;
-}
+//     const porcentajePrecioConDescuento = 100-descuento;
+//     const precioConDescuento = (precio*porcentajePrecioConDescuento)/100;
+//     return precioConDescuento;
+// }
 
 
 // console.log({
@@ -15,4 +15,133 @@ function calcularPrecioConDescuento (precio, descuento){
 //     porcentajePrecioConDescuento,
 //     precioConDescuento,
 // });
+var precioConDescuento2 = 0;
 
+//Subtotal
+function setSubtotal(){
+   $('input[name=subTotal]').val( +($('input[name=mascaraBatman]').val()) +(+ $('input[name=capaBatman]').val()) );
+   calcular()
+}
+
+$('input').blur(() => setSubtotal());
+
+$('input').ready(() => setSubtotal());
+
+$('input').keyup (() => setSubtotal());
+
+$('input').click(() => setSubtotal());
+//Subtotal end
+
+
+//Total equals subtotal at a begginig
+
+ $('input').ready(function(){
+   $('input[name=total]').val( ($('input[name=subTotal]').val())  );
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+ function calcular(){
+    var valor1 = parseInt(document.getElementById('subTotal').value);
+    var valor2 = parseInt(document.getElementById('discount').value);
+    var precioConDescuento1 = (100-valor2);
+    precioConDescuento2 = (valor1*precioConDescuento1)/100;
+   // document.getElementById('total').value = precioConDescuento2;
+   //  document.getElementById("total").innerHTML = precioConDescuento2;
+
+     $("#total").val(precioConDescuento2);
+                    }
+
+let products = [];
+function comprar(){
+   fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=> {
+               products = json;
+               render()
+            })
+}
+function render(){
+   products.forEach(el => {
+      const product = `<div class="col-lg-3">
+         <h3>${el.title}</h3>
+         <h2>${el.price}</h2>
+         <img src="${el.image}" class="img-fluid"/>
+         <p>${el.description}</p>
+      </div>`;
+      $('#products-container').append(product)
+   });
+}
+$('#order').click(() => comprar())
+
+
+
+
+
+
+
+                    
+
+   //                  function calcular2(){
+   //  var valor11 = parseInt(document.getElementById('subTotal').value);
+   //  var valor22 = parseInt(document.getElementById('discount').value);
+   //  var valor33 = parseInt(document.getElementById('total').value);
+
+   //  var precioConDescuento11 = (100-valor22);
+   //  var precioConDescuento22 = (valor11*precioConDescuento11)/100;
+   // // document.getElementById('total').value = precioConDescuento2;
+                    
+
+   
+   // //    $('input').blur(function(){
+   // //       $('input[name=total]').val = (precioConDescuento22);
+   // //    });
+     
+   // //     $('input').keyup (function(){
+   // //       $('input[name=total]').val = (precioConDescuento22);
+   // //   });
+     
+   // //    $('input').click(function(){
+   // //       $('input[name=total]').val = (precioConDescuento22);
+   // //   });
+
+
+   //   $('input').blur(function(){
+   //    $('input[name=total]').val() = precioConDescuento22;
+   //  });
+
+   //  $('input').focus(function(){
+   //    $('input[name=total]').val() = precioConDescuento22;
+   // });
+ 
+
+   // $('input').keyup (function(){
+   //    $('input[name=total]').val() = precioConDescuento22;
+   // });
+   
+   //  $('input').click(function(){
+   //    $('input[name=total]').val() = precioConDescuento22;
+   // });
+
+
+
+
+
+   // }
+
+
+
+                  //    $('input').ready(function(){
+                  //     $('input[name=total]').val( ($('input[name=subTotal]').val())  );
+                  //  });
+
+        
