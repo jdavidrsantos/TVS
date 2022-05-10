@@ -3,6 +3,22 @@
   /* color: rgb(47, 47, 85); */
 }
 
+#logotvs{
+  width: 10%;
+  height: auto;
+
+}
+
+.red{
+  color: red;
+}
+.green{
+  color: rgb(0, 255, 0);
+}
+.bold1{
+  font-weight: 700;
+}
+
 .dimentions img {
   width: 90%;
   height: auto;
@@ -13,7 +29,7 @@
 }
 
 .table {
-  width: 20rem;
+  width: 100%;
 }
 .dimentions2 {
   /* background-color: beige; */
