@@ -9,20 +9,120 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container-fluid">
     <h1 class="header"> <span><img id="logotvs" src="Original.svg" alt="Imagen de Batman"></span> Credit Movements</h1>
-    <div class="quantityProducts">
-      TVS UPGRADE FEE =195  
-      LOCAL UPGRADE FEE=250 |
-      TVS STAGE1 =225  
-      LOCAL STAGE1=325 |
-      TVS STAGE2 =325  
-      LOCAL STAGE2=425 |
-      TVS STAGE4 =800 
-      LOCAL STAGE4=925
+
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-3" > </div>
+    <div class="col-3 align-content-center">
+      <!-- TVS UPGRADE FEE =195   -->
+      <div class="input-group"> <span class="stagesTittle">TVS UPGRADE FEE</span>
+        <div class="input-group-prepend">
+          <label class="input-group-text  " for="capaBatman" >€</label>
+        </div>
+        <input disabled id="capaBatman" type="number" class="form-control" value="195.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+      </div>
+    </div>
+  <!-- LOCAL UPGRADE FEE =250   -->
+    <div class="col-3 align-content-center">
+      <div class="input-group"> <span class="stagesTittle">LOCAL UPGRADE FEE</span>
+        <div class="input-group-prepend">
+          <label class="input-group-text  " for="capaBatman" >€</label>
+        </div>
+        <input disabled id="capaBatman" type="number" class="form-control" value="250.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+      </div>
+    </div>
+ <!-- LOCAL UPGRADE FEE =250 END  -->
+ <div class="col-3" > </div>
+
+    </div>
+</div>
+
+<!-- Stage1TVS  -->
+<div class="container-fluid">
+  <div class="row">
+          <div class="col-2">
+            <div class="input-group"> <span class="stagesTittle">TVS Stage1</span>
+              <div class="input-group-prepend">
+                <label class="input-group-text  " for="priceStage1TVStop" >€</label>
+              </div>
+              <input disabled id="priceStage1TVStop" type="number" class="form-control" value="225.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+             </div>
+          </div>
+        
+<!-- Stage1TVS  -->
+<!-- Stage2TVS  -->
+
+          <div class="col-2">
+            <div class="input-group"><span class="stagesTittle">TVS Stage2</span>
+              <div class="input-group-prepend">
+                <label class="input-group-text  " for="priceStage2TVStop" >€</label>
+              </div>
+              <input disabled id="priceStage2TVStop" type="number" class="form-control" value="325.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+            </div>
+          </div>
+
+<!-- Stage2TVS  -->
+<!-- Stage4TVS  -->
+
+        <div class="col-2">
+          <div class="input-group"><span class="stagesTittle">TVS Stage4</span>
+            <div class="input-group-prepend">
+              <label class="input-group-text  " for="capaBatman" >€</label>
+            </div>
+            <input disabled id="capaBatman" type="number" class="form-control" value="800.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+          </div>
+        </div>
+   
+
+<!-- LOCAL -->
+ 
+    <div class="col-2">
+      <div class="input-group"> <span class="stagesTittle">Local Stage1</span>
+        <div class="input-group-prepend">
+          <label class="input-group-text  " for="priceStage2Localtop" >€</label>
+        </div>
+        <input disabled id="priceStage2Localtop" type="number" class="form-control" value="325.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+       </div>
+    </div>
+  
+<!-- Stage1TVS  -->
+<!-- Stage2TVS  -->
+
+    <div class="col-2">
+      <div class="input-group"><span class="stagesTittle">Local Stage2</span>
+        <div class="input-group-prepend">
+          <label class="input-group-text  " for="capaBatman" >€</label>
+        </div>
+        <input disabled id="capaBatman" type="number" class="form-control" value="425.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+      </div>
+    </div>
+
+<!-- Stage2TVS  -->
+<!-- Stage4TVS  -->
+
+  <div class="col-2">
+    <div class="input-group"><span class="stagesTittle">Local Stage4</span>
+      <div class="input-group-prepend">
+        <label class="input-group-text  " for="capaBatman" >€</label>
+      </div>
+      <input disabled id="capaBatman" type="number" class="form-control" value="925.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
+    </div>
+  </div>
+</div>
 
 
-    </div> 
+
+</div>
+
+<!-- Stage4TVS  -->
+
+
+
+
+
         <div class="row shadow p-3 mb-5 bg-body rounded">
             <!-- <div class="col-2 dimentions">
 <img src="Batman.jpg" alt="Imagen de Batman">
@@ -34,7 +134,7 @@
 <table class="table table-borderless align-middle border border-1 ">
     <thead>
       <tr >
-        <th scope="col">Desciption</th>
+        <th scope="col">Description</th>
         <th scope="col">Category</th>
         <th scope="col">Type</th>
          <th scope="col">Movement</th>
@@ -193,7 +293,7 @@
                 <table class="table table-borderless align-middle border border-1 ">
                     <thead>
                       <tr >
-                        <th scope="col">Desciption</th>
+                        <th scope="col">Description</th>
                         <th scope="col">Category</th>
                         <th scope="col">Type</th>
                          <th scope="col">Movement</th>
@@ -227,7 +327,7 @@
                         <td>DQ381</td>
                         <td>Stage1</td>
                         <td class="green">....</td>
-                        <td class="red">325</td>
+                        <td class="red" ><span id="priceStage3TVS"value="1"  type="number" name="subTotal" ></span></td> 
                         <td class="bold1">1675</td>
                         <td>20/05/2022</td>
                       </tr>
@@ -244,7 +344,7 @@
                                 <td>...</td>
                                 <td>DQ381</td>
                                 <td>Stage1</td>
-                                <td class="green">325</td>
+                                <td class="green" ><span id="priceStage2TVS"value="1"  type="number" name="subTotal" ></span></td> 
                                 <td class="red">...</td>
                                 <td class="bold1">2000</td>
                                 <td>20/06/2022</td>
@@ -357,7 +457,7 @@
   <table class="table table-borderless align-middle border border-1 ">
       <thead>
         <tr >
-          <th scope="col">Desciption</th>
+          <th scope="col">Description</th>
           <th scope="col">Category</th>
           <th scope="col">Type</th>
            <th scope="col">Movement</th>
@@ -390,7 +490,7 @@
           <td>...</td>
           <td>DQ381</td>
           <td>Stage1</td>
-          <td class="green">225</td>
+          <td class="green" ><span id="priceStage1TVS"value="1"  type="number" name="subTotal" ></span></td> 
           <td class="red">...</td>
           <td class="bold1">2225</td>
           <td>20/05/2022</td>
@@ -495,14 +595,7 @@
   </table>
 </div>
 
-<!-- <div class="col-2 position-relative">
-          <div class="input-group mb-3 position-absolute bottom-0 end-0 price">
-            <div class="input-group-prepend">
-              <label class="input-group-text  " for="capaBatman" >$</label>
-            </div>
-            <input id="capaBatman" type="number" class="form-control" value="140.00" name="capaBatman" onchange="calcular()" oninput="calcular()" onblur="calcular()" onfocus="calcular()" onkeyup="calcular()" onclick="calcular()" >
-          </div>
-</div> -->
+
 </div>
 <!-- END TVS -->
 
@@ -582,11 +675,9 @@ TOTAL -->
     <button class="btn btn-success me-md-0 me-0 mt-2" type="button" id="order">ORDER</button>
 </div>
 </div> -->
-
-
 </div>
 
- 
+
 
 
 

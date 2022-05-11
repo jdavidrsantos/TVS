@@ -33,6 +33,7 @@
 }
 .dimentions2 {
   /* background-color: beige; */
+  overflow-x: auto;
 }
 .dimentions3 {
   /* background-color: blueviolet; */
@@ -58,5 +59,10 @@
 }
 
 .price {
-  width: 70%;
+  width: 100%;
+}
+
+.stagesTittle{
+  padding-right: 1rem;
+  font-weight: 500;
 }

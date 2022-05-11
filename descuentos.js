@@ -51,37 +51,66 @@ $('input').click(() => setSubtotal());
 
 
  function calcular(){
-    var valor1 = parseInt(document.getElementById('subTotal').value);
-    var valor2 = parseInt(document.getElementById('discount').value);
-    var precioConDescuento1 = (100-valor2);
-    precioConDescuento2 = (valor1*precioConDescuento1)/100;
-   // document.getElementById('total').value = precioConDescuento2;
-   //  document.getElementById("total").innerHTML = precioConDescuento2;
+     var valor1 = parseInt(document.getElementById('priceStage1TVStop').value);     
+     document.getElementById('priceStage1TVS').innerHTML = valor1;
 
-     $("#total").val(precioConDescuento2);
+     var valor2 = parseInt(document.getElementById('priceStage2Localtop').value);     
+     document.getElementById('priceStage2TVS').innerHTML = valor2;
+     var valor3 = parseInt(document.getElementById('priceStage2Localtop').value);     
+     document.getElementById('priceStage3TVS').innerHTML = valor3;
                     }
 
-let products = [];
-function comprar(){
-   fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=> {
-               products = json;
-               render()
-            })
-}
-function render(){
-   products.forEach(el => {
-      const product = `<div class="col-lg-3">
-         <h3>${el.title}</h3>
-         <h2>${el.price}</h2>
-         <img src="${el.image}" class="img-fluid"/>
-         <p>${el.description}</p>
-      </div>`;
-      $('#products-container').append(product)
-   });
-}
-$('#order').click(() => comprar())
+                   
+               
+            
+
+
+
+
+
+   //    $('input').blur(function(){
+   //     $('input[name=]').val() = precioConDescuento22;
+   //   });
+
+   //   $('input').focus(function(){
+   //     $('input[name=total]').val() = precioConDescuento22;
+   //  });
+ 
+
+   //  $('input').keyup (function(){
+   //     $('input[name=total]').val() = precioConDescuento22;
+   //  });
+   
+   //   $('input').click(function(){
+   //     $('input[name=total]').val() = precioConDescuento22;
+   //  });
+
+
+
+
+
+
+// let products = [];
+// function comprar(){
+//    fetch('https://fakestoreapi.com/products')
+//             .then(res=>res.json())
+//             .then(json=> {
+//                products = json;
+//                render()
+//             })
+// }
+// function render(){
+//    products.forEach(el => {
+//       const product = `<div class="col-lg-3">
+//          <h3>${el.title}</h3>
+//          <h2>${el.price}</h2>
+//          <img src="${el.image}" class="img-fluid"/>
+//          <p>${el.description}</p>
+//       </div>`;
+//       $('#products-container').append(product)
+//    });
+// }
+// $('#order').click(() => comprar())
 
 
 
